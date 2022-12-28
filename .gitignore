@@ -1,7 +1,7 @@
 db.sqlite3
 static/
-myproject/settings.py
-myproject/__pycache__/
+mysite/settings.py
+mysite/__pycache__/
 todo/__pycache__/
 # Byte-compiled / optimized / DLL files
 __pycache__/
