@@ -6,7 +6,7 @@ app_name = 'home'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    #path('fake-new-detector/', views.fake_news_detector, name='fake_news_detector'),
+    path('fake-news-detector/', views.fake_news_detector, name='fake_news_detector'),
     # ex: /polls/5/
     #path('<int:question_id>/', views.detail, name='detail'),
     # ex: /polls/5/results/
