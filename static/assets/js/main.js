@@ -4,6 +4,13 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function copyUrl() {
+  var copyText = document.getElementById("short_url");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(copyText.value);
+  document.getElementById("copied").innerHTML = "Copied";
+}
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
