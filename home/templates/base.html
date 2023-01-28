@@ -56,9 +56,10 @@
   <main id="main">
     {% if messages %}
       {% for message in messages %}
-        <div class="alert alert-{{message.tags}}"> {{message }} </div>
+       <section> <div class="alert alert-{{message.tags}}"> {{message }} </div></section>
       {% endfor %}
     {% endif %}
+
 {%block content %}
 {% endblock %}
   </main><!-- End #main -->
