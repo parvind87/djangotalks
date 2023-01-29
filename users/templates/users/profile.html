@@ -23,7 +23,9 @@
                     <div class="card-body">
                        {{user.username}}
                        <br>
-                       {{user.email}}
+                       {{user.email}}<br>
+                       {{user.profile.location}}<br>
+                       <img src="{{ user.profile.image.url }}" height="100px" width="100px">
                     </div>
                 </div>
             </div>

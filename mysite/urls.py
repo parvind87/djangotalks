@@ -18,6 +18,8 @@ from django.urls import include, path
 from home import views
 from users import views as user_views
 from django.contrib.auth import views as authentication_views
+from django.conf import settings
+from django.conf.urls.static import static
 #from food import views
 urlpatterns = [
     path('', views.index, name='index'),
@@ -29,3 +31,9 @@ urlpatterns = [
     path('', include('home.urls')),
     path('admin/', admin.site.urls),
 ]
+
+
+
+urlpatterns += [
+    # ... the rest of your URLconf goes here ...
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
